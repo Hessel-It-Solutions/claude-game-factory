@@ -1,0 +1,33 @@
+{
+  "pixelizer": null,
+  "speakers": {},
+  "no_portrait": [],
+  "scopes": {},
+  "final_art": {
+    "include": [
+      "art/characters/*/base/base*.png",
+      "art/characters/*/concept/portraits_px*/*.png",
+      "art/storyboard/*/[0-9][0-9].png",
+      "art/environments/**/keyart/keyart.png",
+      "art/environments/**/keyart/parallax/*.png",
+      "art/illustrations/*.png"
+    ],
+    "exclude": [
+      "**/*_x8.png", "**/*_raw*.png", "**/*preview*.png", "**/base_v*.png", "**/*magenta*.png", "**/*cutout*.png",
+      "**/concept_*.png", "**/turnaround*.png", "**/portraits.png", "**/*sheet*.png",
+      "**/*contact*.png", "**/*lineup*.png", "**/slice_v*.png", "**/_rejected/**",
+      "**/_refs/**", "**/_legacy/**", "**/*raw*", "**/mockup*.png", "**/*board.png", "**/*_clean.png"
+    ]
+  },
+  "assets": {
+    "exclude": [
+      "**/*_raw*.png", "**/*.raw.png", "**/*preview*.png", "**/*contact*.png",
+      "**/*lineup*.png", "**/slice_v*.png", "**/_rejected/**", "**/_refs/**",
+      "**/_legacy/**", "**/*board.png", "**/*_clean.png", "**/*guide*.png", "art/_prompts/**",
+      "**/*_x8.png", "**/*_v1*.png", "**/*concept*.png", "**/*turnaround*.png",
+      "**/portraits.png", "**/portraits_px.png", "**/portraits_px_v1.png", "**/portraits_v1.png",
+      "**/*scale_check*", "**/*compare*", "**/*magenta*", "**/*cutout*", "**/expr_*.png",
+      "**/runs/**", "**/_old/**", "**/_orig/**", "**/_review_*.png"
+    ]
+  }
+}

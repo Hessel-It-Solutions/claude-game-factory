@@ -1,0 +1,12 @@
+{
+  "name": "chr_hero",
+  "output_dir": "game/assets/sprites/chr_hero",
+  "cell": [112, 96],
+  "foot_y": 94,
+  "animations": [
+    {"name": "down_idle", "source": "art/characters/chr_hero/base/down_idle.png", "frames": 4, "fps": 6, "loop": true},
+    {"name": "down_walk", "source": "art/characters/chr_hero/anim/down_walk.png", "frames": 8, "fps": 12, "loop": true},
+    {"name": "side_attack", "source": "art/characters/chr_hero/anim/side_attack.png", "frames": 6, "fps": 12.5, "loop": false},
+    {"name": "side_carry", "source": "art/characters/chr_hero/runs/carry/frames/side/carry", "fps": 10, "loop": true}
+  ]
+}

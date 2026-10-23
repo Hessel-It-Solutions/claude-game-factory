@@ -1,0 +1,18 @@
+{
+  "name": "hessel",
+  "owner": {
+    "name": "Hessel IT Solutions",
+    "url": "https://github.com/Hessel-It-Solutions"
+  },
+  "metadata": {
+    "description": "A Claude Code game studio in a plugin: pixel-art mobile games made with Claude Code, Codex CLI, Runway and Godot 4"
+  },
+  "plugins": [
+    {
+      "name": "game-factory",
+      "version": "0.1.0",
+      "source": "./plugins/game-factory",
+      "description": "Producer command plus 25 specialist skills (concept, GDD, script, art direction, storyboard, sprites, Godot, QA, blind playtest, release) with approval gates between pre-production and production"
+    }
+  ]
+}
