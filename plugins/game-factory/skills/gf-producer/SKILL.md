@@ -1,6 +1,6 @@
 ---
 name: gf-producer
-description: Producer of the pixel art mobile game factory. Owns the shared contracts (folder structure, STATE.md, approval gates, asset registry, Runway budget, file ownership), the wave map and the cost rules. Use whenever you plan, dispatch, consolidate or review a wave of /game-factory, open a new game in the factory, check status or gates, split work between Claude, Codex and Runway, or when any other gf-* skill needs to know where to write something or whether production is unlocked.
+description: "Producer of the pixel art mobile game factory. Owns the shared contracts (folder structure, STATE.md, approval gates, asset registry, Runway budget, file ownership), the wave map and the cost rules. Use whenever you plan, dispatch, consolidate or review a wave of /game-factory, open a new game in the factory, check status or gates, split work between Claude, Codex and Runway, or when any other gf-* skill needs to know where to write something or whether production is unlocked."
 ---
 
 # gf-producer: factory contracts
@@ -245,7 +245,7 @@ Codex generation does not go into BUDGET.md, but it is logged in `_prompts` and 
 
 ## New game
 
-`/game-factory:game-factory new <name>`: creates the structure above, **preserving what already exists** (DECISIONS.md and references in `art/_refs/` registered before W0 become input for the W1 interview), a STATE.md with all gates pending, a `.gitignore`, `git init`, and starts with W0. The production files start from the plugin templates (two levels up from this skill's base directory, in `templates/`): copy `STATE.md`, `DECISIONS.md`, `BUDGET.md`, `ASSETS.md` and `SESSION_HANDOFF.md` into `production/` unless they already exist. `wave-plan.md` is the shape of every `production/waves/NN-<name>.md`, and `codex-brief.md` is the shape of every Codex batch brief.
+`/game-factory:game-factory new <name>` (without the plugin, the user asks in plain words, for example "start a new game called <name> with the game factory", and you follow the same steps): creates the structure above, **preserving what already exists** (DECISIONS.md and references in `art/_refs/` registered before W0 become input for the W1 interview), a STATE.md with all gates pending, a `.gitignore`, `git init`, and starts with W0. The production files start from the plugin templates (two levels up from this skill's base directory, in `templates/`; when the skills were installed without the plugin, use `plugins/game-factory/templates/` from the clone made by gf-setup): copy `STATE.md`, `DECISIONS.md`, `BUDGET.md`, `ASSETS.md` and `SESSION_HANDOFF.md` into `production/` unless they already exist. `wave-plan.md` is the shape of every `production/waves/NN-<name>.md`, and `codex-brief.md` is the shape of every Codex batch brief.
 
 `.gitignore` must include:
 

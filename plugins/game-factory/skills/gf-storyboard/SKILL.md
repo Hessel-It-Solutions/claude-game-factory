@@ -1,6 +1,6 @@
 ---
 name: gf-storyboard
-description: Game storyboard: breaks each script sequence into panels (framing, action, line, camera, duration, transition), generates the frames in pixel art in Runway with the approved characters and scenery, and assembles the board (no video: scenes become portrait + text box and sprites on the scenery). Includes the screen-flow storyboard and the first minute of gameplay. Use in W4 of /game-factory (one agent per chapter), or when the user asks for a storyboard, animatic, "storyboard this scene", or to visualize a scene.
+description: "Game storyboard: breaks each script sequence into panels (framing, action, line, camera, duration, transition), generates the frames in pixel art in Runway with the approved characters and scenery, and assembles the board (no video: scenes become portrait + text box and sprites on the scenery). Includes the screen-flow storyboard and the first minute of gameplay. Use in W4 of /game-factory (one agent per chapter), or when the user asks for a storyboard, animatic, \"storyboard this scene\", or to visualize a scene."
 ---
 
 # gf-storyboard: storyboard

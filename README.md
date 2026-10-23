@@ -1,5 +1,7 @@
 # claude-game-factory
 
+[![skills.sh](https://skills.sh/b/Hessel-It-Solutions/claude-game-factory)](https://skills.sh/Hessel-It-Solutions/claude-game-factory)
+
 A game studio packaged as a Claude Code plugin. You bring the idea and approve each stage; the factory runs pre-production, art, audio, Godot code, tests and blind playtests until you have a pixel-art mobile game running on a phone.
 
 It is made of one producer command and 25 specialist skills, plus the tools they use. Claude Code is the producer. Codex CLI does most of the code and the sprite strips. Runway makes the identity art, key art, music and sound. Godot 4 is the engine.
@@ -24,6 +26,14 @@ More screenshots, animations, the blind playtest flipbook, music and sound effec
 /plugin marketplace add Hessel-It-Solutions/claude-game-factory
 /plugin install game-factory@hessel
 ```
+
+Using another agent (Cursor, Codex, Gemini, OpenCode and others)? The skills are also on [skills.sh](https://skills.sh/Hessel-It-Solutions/claude-game-factory):
+
+```sh
+npx skills add Hessel-It-Solutions/claude-game-factory
+```
+
+That installs the 25 skills only. The `gf-setup` skill fetches the tools and templates from this repository, and instead of the `/game-factory` command you ask in plain words ("start a new game called my_game with the game factory"). Claude Code users get the full experience from the plugin.
 
 Then, in an empty folder:
 

@@ -1,6 +1,6 @@
 ---
 name: gf-gameplay
-description: Implementation of the game mechanics in Godot 4: player character (movement, physics, combat, abilities), enemies and bosses with state machine AI, hitbox/hurtbox, damage and health, collectibles, camera, game feel (coyote time, buffer, hitstop, screen shake, particles) and data-driven balancing. Use from W6 on, or when the user asks to implement, fix or tune a mechanic, enemy, boss or the feel of the controls.
+description: "Implementation of the game mechanics in Godot 4: player character (movement, physics, combat, abilities), enemies and bosses with state machine AI, hitbox/hurtbox, damage and health, collectibles, camera, game feel (coyote time, buffer, hitstop, screen shake, particles) and data-driven balancing. Use from W6 on, or when the user asks to implement, fix or tune a mechanic, enemy, boss or the feel of the controls."
 ---
 
 # gf-gameplay: mechanics

@@ -1,6 +1,6 @@
 ---
 name: gf-narrative
-description: Game narrative and script: premise, lore, act and chapter structure (beat sheet), cast with arcs, scene script with dialogue, and export of the dialogue to game data. Use in W2 (structure) and W3 (full script) of /game-factory, when the user asks to write or revise story, a scene, dialogue or lore, "write the script", or when gf-cutscenes needs the source text.
+description: "Game narrative and script: premise, lore, act and chapter structure (beat sheet), cast with arcs, scene script with dialogue, and export of the dialogue to game data. Use in W2 (structure) and W3 (full script) of /game-factory, when the user asks to write or revise story, a scene, dialogue or lore, \"write the script\", or when gf-cutscenes needs the source text."
 ---
 
 # gf-narrative: structure and script

@@ -1,6 +1,6 @@
 ---
 name: gf-mobile
-description: Mobile platform for the Godot 4 game: Android export presets (debug APK, release AAB) and iOS, signing, adaptive icons and splash, permissions, on-device performance (fps, memory, app size, battery), lifecycle (pause, resume), and monetization when the concept asks (ads, IAP, through official plugins). Use in W7 (vertical slice build), in WF (release), or when the user asks "build the apk", "test on the phone", "the game is slow on the phone", "add ads/purchases".
+description: "Mobile platform for the Godot 4 game: Android export presets (debug APK, release AAB) and iOS, signing, adaptive icons and splash, permissions, on-device performance (fps, memory, app size, battery), lifecycle (pause, resume), and monetization when the concept asks (ads, IAP, through official plugins). Use in W7 (vertical slice build), in WF (release), or when the user asks \"build the apk\", \"test on the phone\", \"the game is slow on the phone\", \"add ads/purchases\"."
 ---
 
 # gf-mobile: build, performance and technical store side

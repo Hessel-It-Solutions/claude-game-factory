@@ -1,6 +1,6 @@
 ---
 name: gf-art-direction
-description: Pixel art direction for the game: style exploration (style tiles in Runway), logical resolution, character and tile size, master palette, outline/light/shadow rules, Runway model choice by A/B test, and the official prompt blocks. Owns docs/02-art-direction.md, docs/palette.hex and art/_refs/. Use in W1 (exploration) and W2 (style guide) of /game-factory, or when the user wants to change the look, the palette or the pixel art scale, "pick the art style", "make the palette".
+description: "Pixel art direction for the game: style exploration (style tiles in Runway), logical resolution, character and tile size, master palette, outline/light/shadow rules, Runway model choice by A/B test, and the official prompt blocks. Owns docs/02-art-direction.md, docs/palette.hex and art/_refs/. Use in W1 (exploration) and W2 (style guide) of /game-factory, or when the user wants to change the look, the palette or the pixel art scale, \"pick the art style\", \"make the palette\"."
 ---
 
 # gf-art-direction: style and visual rules

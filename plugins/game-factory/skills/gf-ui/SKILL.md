@@ -1,6 +1,6 @@
 ---
 name: gf-ui
-description: Pixel art UI and HUD for mobile: UI kit (buttons, 9-slice panels, bars, icons), bitmap font, game HUD, on-screen touch controls, dialogue box with portrait, menus and flow screens, Godot Theme (.tres), safe areas and accessibility. Use from W5 on, or when the user asks for a menu, HUD, buttons, icons, font, pause/game over screen, or a phone layout fix ("make the HUD", "fix the layout on the phone").
+description: "Pixel art UI and HUD for mobile: UI kit (buttons, 9-slice panels, bars, icons), bitmap font, game HUD, on-screen touch controls, dialogue box with portrait, menus and flow screens, Godot Theme (.tres), safe areas and accessibility. Use from W5 on, or when the user asks for a menu, HUD, buttons, icons, font, pause/game over screen, or a phone layout fix (\"make the HUD\", \"fix the layout on the phone\")."
 ---
 
 # gf-ui: interface

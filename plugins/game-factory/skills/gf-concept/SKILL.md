@@ -1,6 +1,6 @@
 ---
 name: gf-concept
-description: Mobile game concept: interview with the user, alternative pitches, reference and market research, and the document docs/00-concept.md (premise, genre, core loop, audience, pillars, platform, monetization, scope, pixel art style). Use in W1 of /game-factory, when the user wants to discuss a new game idea, compare pitches, "pitch me a game", or revise the concept after G1 was rejected.
+description: "Mobile game concept: interview with the user, alternative pitches, reference and market research, and the document docs/00-concept.md (premise, genre, core loop, audience, pillars, platform, monetization, scope, pixel art style). Use in W1 of /game-factory, when the user wants to discuss a new game idea, compare pitches, \"pitch me a game\", or revise the concept after G1 was rejected."
 ---
 
 # gf-concept: concept

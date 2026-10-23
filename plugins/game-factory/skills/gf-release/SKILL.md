@@ -1,6 +1,6 @@
 ---
 name: gf-release
-description: Mobile game release: store listing (Google Play and App Store) with copy and ASO in the game's languages, icon, feature graphic, framed screenshots, trailer assembled from game captures, static illustrations and music (no AI-generated video), age rating, privacy policy and submission checklist. Use in WF of /game-factory, or when the user asks for store copy, screenshots, a trailer, the final icon or help publishing ("write the store listing", "make the trailer").
+description: "Mobile game release: store listing (Google Play and App Store) with copy and ASO in the game's languages, icon, feature graphic, framed screenshots, trailer assembled from game captures, static illustrations and music (no AI-generated video), age rating, privacy policy and submission checklist. Use in WF of /game-factory, or when the user asks for store copy, screenshots, a trailer, the final icon or help publishing (\"write the store listing\", \"make the trailer\")."
 ---
 
 # gf-release: store and marketing

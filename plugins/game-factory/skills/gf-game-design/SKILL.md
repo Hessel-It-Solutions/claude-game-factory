@@ -1,6 +1,6 @@
 ---
 name: gf-game-design
-description: Mobile game design: the GDD (docs/01-gdd.md) with mechanics, systems, touch controls, progression, economy, enemies and initial balance, plus the per-chapter content plan (docs/08-content-plan.md) that says which assets and levels each chapter needs. Use in W2 (GDD v1) and W3 (content plan) of /game-factory, or when the user asks to create, change or balance a mechanic, "write the GDD", "balance the game".
+description: "Mobile game design: the GDD (docs/01-gdd.md) with mechanics, systems, touch controls, progression, economy, enemies and initial balance, plus the per-chapter content plan (docs/08-content-plan.md) that says which assets and levels each chapter needs. Use in W2 (GDD v1) and W3 (content plan) of /game-factory, or when the user asks to create, change or balance a mechanic, \"write the GDD\", \"balance the game\"."
 ---
 
 # gf-game-design: GDD and content plan

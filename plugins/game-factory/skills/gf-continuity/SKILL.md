@@ -1,6 +1,6 @@
 ---
 name: gf-continuity
-description: Continuity and consistency reviewer of the game Bible and assets. Cross-checks concept, GDD, script, characters, scenery, storyboard, content plan, ASSETS.md and the Godot project looking for orphan IDs, contradictions, missing or off-style assets. Read-only; writes production/continuity-report.md. Use at the end of W4 (before G3), at the end of each chapter, after renaming anything, or when the user asks "is everything consistent?" or "check continuity".
+description: "Continuity and consistency reviewer of the game Bible and assets. Cross-checks concept, GDD, script, characters, scenery, storyboard, content plan, ASSETS.md and the Godot project looking for orphan IDs, contradictions, missing or off-style assets. Read-only; writes production/continuity-report.md. Use at the end of W4 (before G3), at the end of each chapter, after renaming anything, or when the user asks \"is everything consistent?\" or \"check continuity\"."
 ---
 
 # gf-continuity: continuity
