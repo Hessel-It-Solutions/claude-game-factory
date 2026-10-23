@@ -5,6 +5,20 @@ description: "Mobile game release: store listing (Google Play and App Store) wit
 
 # gf-release: store and marketing
 
+Prepares the launch: store listings for Google Play and the App Store with copy and ASO in every language, icon, feature graphic, framed screenshots, a trailer cut from real gameplay captures, age rating, privacy policy and a submission checklist. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Writing store copy and ASO
+- Making the icon, screenshots or trailer
+- Preparing the submission to the stores
+
+Produces: `store/` and `art/marketing/`.
+
+Works with: gf-mobile, gf-runway, gf-audio.
+
+---
+
 Owner of `store/` and `art/marketing/`. Read `gf-runway`. Publishing to the stores is a user action (account, payment, terms acceptance); the skill prepares everything and delivers the checklist.
 
 ## Store listing (`store/<locale>/listing.md`, one folder per language of the concept, for example `en-US`)

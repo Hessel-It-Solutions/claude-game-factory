@@ -5,6 +5,20 @@ description: "Prepares and verifies the game factory toolchain (Godot 4 + export
 
 # gf-setup: toolchain
 
+Installs and checks everything the factory needs on your machine: Godot 4 with export templates, Python, sprite-gen, ffmpeg, the Android SDK and JDK, Codex CLI and the Runway connection. Then it copies the factory tools into your game repo so the other skills can call them. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- The first step (W0) of every new game
+- A build, an export or sprite-gen fails because of the environment
+- You need to update the vendored tools after a plugin upgrade
+
+Produces: a working toolchain, `tools/gf`, `tools/codex`, `tools/playtest`, `game/tools`, and the G0 report.
+
+Works with: gf-producer, gf-mobile, gf-sprites.
+
+---
+
 Runs in the main context (it may ask for a password, a license acceptance or a decision). Each step: **check first, install only what is missing**, and record the result in `production/waves/00-setup.md`. Closes gate G0.
 
 The instructions target macOS first. Linux and Windows differences are noted where they are obvious (package manager, paths, `timeout`).

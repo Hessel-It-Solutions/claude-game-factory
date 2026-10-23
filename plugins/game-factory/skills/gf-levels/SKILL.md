@@ -5,6 +5,20 @@ description: "Level design and assembly in Godot 4: blockout, TileSet with terra
 
 # gf-levels: levels
 
+Designs and assembles levels in Godot 4: blockout, TileSet terrains, TileMapLayer, parallax, collision, enemy and item spawns, checkpoints, cutscene and music triggers, difficulty pacing and teaching each mechanic. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Building a level from the content plan
+- Adjusting layout, collision or checkpoints
+- Balancing the difficulty curve of a level
+
+Produces: `game/scenes/levels/` and `game/data/levels/`.
+
+Works with: gf-environments, gf-gameplay, gf-cutscenes.
+
+---
+
 Inputs: `docs/08-content-plan.md` (level: location, goal, mechanics, enemies, duration), `docs/04-world/<loc_id>.md`, `game/assets/environments/<loc_id>/` (tiles, `tiles_layout.md`, `parallax.json`, props), gf-gameplay actors. Owner of `game/scenes/levels/`, `game/data/levels/`.
 
 ## Process per level

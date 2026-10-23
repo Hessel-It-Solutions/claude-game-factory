@@ -5,6 +5,20 @@ description: "Implementation of the game mechanics in Godot 4: player character 
 
 # gf-gameplay: mechanics
 
+Implements the mechanics in Godot 4: the player (movement, combat, abilities), enemies and bosses with state machine AI, hitboxes, damage and health, pickups, camera, and game feel (coyote time, input buffer, hitstop, screen shake, particles), with balance values kept in data files. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Implementing or fixing a mechanic, enemy or boss
+- Tuning how the controls feel
+- Rebalancing damage, health or timing
+
+Produces: `game/scenes/actors/`, `game/scripts/gameplay/`, `game/data/balance/`.
+
+Works with: gf-game-design, gf-sprites, gf-autotest.
+
+---
+
 Inputs: `docs/01-gdd.md` (mechanics, parameters, enemies), `docs/08-content-plan.md`, sprites in `game/assets/sprites/`, gf-godot-core contracts. Owner of `game/scenes/actors/`, `game/scripts/gameplay/`, `game/data/balance/`.
 
 ## How to work

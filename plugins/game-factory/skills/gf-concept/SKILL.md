@@ -5,6 +5,20 @@ description: "Mobile game concept: interview with the user, alternative pitches,
 
 # gf-concept: concept
 
+Turns an idea into an approved game concept. It interviews you, writes three distinct pitches, researches references and the market, and then writes the concept document with premise, genre, core loop, audience, pillars, platform, monetization, scope and pixel art style. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- You have a game idea and want to shape it
+- You want to compare pitches before committing
+- The concept was rejected at G1 and needs another pass
+
+Produces: `docs/00-concept.md`.
+
+Works with: gf-art-direction (style tiles), gf-game-design.
+
+---
+
 The first thing that happens in a game. No final art, code or script before G1.
 
 ## 1a. Interview (main context)

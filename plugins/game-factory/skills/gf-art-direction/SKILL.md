@@ -5,6 +5,20 @@ description: "Pixel art direction for the game: style exploration (style tiles i
 
 # gf-art-direction: style and visual rules
 
+Sets the look of the game. It explores styles with style tiles, picks the logical resolution, character and tile sizes, builds the master palette, writes the outline, light and shadow rules, compares image models by A/B test, and keeps the official prompt blocks every other art skill uses. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Exploring visual styles for a new game
+- Writing the style guide and master palette
+- Changing the look, palette or pixel scale of an existing game
+
+Produces: `docs/02-art-direction.md`, `docs/palette.hex`, `art/_refs/`.
+
+Works with: gf-runway, gf-characters, gf-environments, gf-ui.
+
+---
+
 Always read the `gf-runway` skill before generating.
 
 ## W1: exploration (cheap)

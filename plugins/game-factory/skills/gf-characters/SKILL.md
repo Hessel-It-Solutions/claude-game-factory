@@ -5,6 +5,20 @@ description: "Character creation for the game: character sheet (bible) with pers
 
 # gf-characters: cast
 
+Creates the cast. For each character it writes a sheet (personality, arc, silhouette, palette, the animations and expressions needed) and produces the concept art, turnaround and the pixel art identity base that anchors every later sprite. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Creating, redesigning or detailing a character, enemy, boss or NPC
+- Producing the identity base before any sprite work
+- Defining the expression list for dialogue portraits
+
+Produces: `docs/03-characters/` and `art/characters/<chr_id>/concept|base/`.
+
+Works with: gf-sprites, gf-storyboard, gf-narrative.
+
+---
+
 > **Detail coherence guardrail:** all content follows the same art standard; no character less detailed than the scenery, and no scenery more detailed than the characters. Detail is volume (light and shadow in masses, continuous outline on actors, desaturated storyboard color), not loose pixels. Character and animal bases are cut out of the storyboard art; the AI only completes directions and animations, anchored on the cutout. Before delivering: a coherence board with the asset at game size over the real scenery, next to the approved reference character and the storyboard cutout. Full rule in `docs/02-art-direction.md` section 0.1.
 
 Inputs: `docs/05-script/outline.md` (cast and arcs), `docs/01-gdd.md` (mechanics and enemies), `docs/02-art-direction.md` (scale, palette, prompt blocks). Load `gf-runway` before generating.

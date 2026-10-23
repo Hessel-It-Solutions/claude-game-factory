@@ -5,6 +5,20 @@ description: "Architecture and technical base of the Godot 4 pixel art mobile ga
 
 # gf-godot-core: technical base
 
+Lays the technical base of the Godot 4 project: pixel-perfect settings, folders, autoloads (Events, Game, Save, Audio, Scenes, Settings), the sprite atlas importer, the state machine, abstract touch input, the save system, code patterns and GUT tests. It also lists the Godot 4 traps that only show up on Android. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Scaffolding the Godot project (W5)
+- Changing project.godot, autoloads or addons
+- Agreeing on contracts between systems
+
+Produces: `game/project.godot`, `game/autoload/`, `game/core/`, `game/addons/`.
+
+Works with: gf-gameplay, gf-levels, gf-mobile, gf-autotest.
+
+---
+
 Owner of `game/project.godot`, `game/autoload/`, `game/core/`, `game/addons/`. Other skills request changes to these files through the wave report.
 
 ## Scaffold

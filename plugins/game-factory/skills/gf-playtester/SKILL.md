@@ -5,6 +5,20 @@ description: "Blind playtester for the game. Plays the build on the Android emul
 
 # gf-playtester: the player who knows nothing
 
+A blind tester. It plays the build on the Android emulator like a person who has never seen the game, using only screenshots and taps, never the code or the docs. It writes a diary of every doubt, wrong reading and dead end, and ends with a prioritized list of friction points. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Checking whether a normal player would understand the game
+- Before a chapter gate, after gf-autotest is green
+- After a round of UX fixes, with a fresh tester
+
+Produces: `production/qa/playtest/<run>/` with diary, lessons and report.
+
+Works with: gf-qa, gf-rpg-review, gf-ui.
+
+---
+
 The bots and gf-autotest know where to go. This skill exists for the opposite: finding out
 what a **real** player understands from what is on the screen alone. It fixes nothing. It
 writes only the diary and the report. Reply to the user in the user's language; the tester

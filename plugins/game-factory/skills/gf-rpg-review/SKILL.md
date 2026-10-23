@@ -5,6 +5,20 @@ description: "Expert critic of RPGs and classic action RPGs (Zelda ALttP, Link's
 
 # gf-rpg-review: the chapter seen by someone who knows the genre
 
+A critic who knows classic action RPGs (Zelda, Chrono Trigger, Secret of Mana and modern ones like Tunic and Death's Door). It plays and reads a chapter, compares it with the conventions of the genre and delivers a prioritized list of improvements, each with the skill that owns the fix. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Reviewing a chapter before its gate
+- Asking what is missing to feel like Zelda
+- Evaluating exploration, secrets, combat, menus or pacing
+
+Produces: a review report in `production/qa/`.
+
+Works with: gf-game-design, gf-levels, gf-playtester.
+
+---
+
 This skill does not fix code or art. It **plays, reads and judges**, and delivers proposals
 with an owner (gf-game-design, gf-levels, gf-ui, gf-gameplay, gf-narrative, gf-audio). A real
 bug (crash, softlock) goes to gf-qa; here the focus is **design**: is the game good to play

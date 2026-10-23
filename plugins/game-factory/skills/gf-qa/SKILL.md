@@ -5,6 +5,20 @@ description: "QA for the Godot 4 mobile game: GUT automated tests, headless smok
 
 # gf-qa: quality
 
+Quality control for the whole game: GUT suites, headless smoke tests of every scene, the level-run bot, playtest checklists per gate, screenshots in several aspect ratios, asset checks (palette, size, import), regression runs and a prioritized bug report. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Before any production gate or at the end of a chapter
+- Someone reports a bug
+- Running a full regression pass
+
+Produces: `game/tests/` and reports in `production/qa/`.
+
+Works with: gf-autotest, gf-playtester, gf-mobile.
+
+---
+
 Owner of `game/tests/` and `production/qa/`. A bug found becomes an item in the report with
 an owner; gf-qa does not fix gameplay code, only tests and test tooling. Reply to the user
 in the user's language. For the AC matrix and the "how" of proving each criterion, use

@@ -5,6 +5,20 @@ description: "Implementation of cutscenes and dialogue in Godot 4 in the classic
 
 # gf-cutscenes: scenes and dialogue
 
+Builds cutscenes and dialogue in the classic 2D RPG style, without video: animated portraits with a text box, scenes acted out by the game's own sprites with AnimationPlayer, full-screen illustrations at climaxes, subtitles, skip, and triggers from levels. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Implementing a scene from the storyboard
+- Wiring dialogue into the game
+- Building the opening or the ending
+
+Produces: `game/scenes/cutscenes/`, `game/scripts/dialogue/`, illustrations.
+
+Works with: gf-storyboard, gf-narrative, gf-levels.
+
+---
+
 Inputs: `docs/06-storyboard/<seq_id>.md` (Implementation column), `game/data/dialogue/<seq_id>.json` (gf-narrative), portraits in `game/assets/portraits/`, `dialogue_box.tscn` (gf-ui). Owner of `game/scenes/cutscenes/`, `game/scripts/dialogue/`.
 
 ## House rule: no video

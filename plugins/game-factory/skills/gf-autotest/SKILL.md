@@ -5,6 +5,20 @@ description: "Automated testing specialist for the Godot 4 game. Turns everythin
 
 # gf-autotest: ACs that are tested, not just "it compiles and passes"
 
+Proves that what was built works. It turns every change into a matrix of acceptance criteria, links each one to an automated test (GUT, a real scene, a scenario bot that plays with real input, a capture) and only delivers when the whole matrix is green. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- After any fix or feature, before calling it done
+- Before installing a build on a device
+- Someone asks "did you test it?" or a bug slipped through
+
+Produces: `production/qa/ac/<scope>.md`, tests in `game/tests/`, bot runs.
+
+Works with: gf-qa, gf-gameplay, gf-levels.
+
+---
+
 This skill complements gf-qa (layers, report, gates). Here is the **how**: prove each
 acceptance criterion through the path the player actually uses. Rule: **nothing ships
 with an AC that has no test or a red test.** If an AC cannot be automated, it appears in

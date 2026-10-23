@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "game-factory",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "source": "./plugins/game-factory",
       "description": "Producer command plus 25 specialist skills (concept, GDD, script, art direction, storyboard, sprites, Godot, QA, blind playtest, release) with approval gates between pre-production and production"
     }

@@ -5,6 +5,20 @@ description: "Continuity and consistency reviewer of the game Bible and assets. 
 
 # gf-continuity: continuity
 
+A read-only reviewer that cross-checks the whole bible and the game: concept, GDD, script, characters, locations, storyboard, content plan, the asset registry and the Godot project. It reports orphan IDs, contradictions and missing or off-style assets, with file, line and owning skill. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Before gate G3 at the end of the storyboard wave
+- At the end of each chapter
+- After renaming anything
+
+Produces: `production/continuity-report.md`.
+
+Works with: gf-producer and every skill that owns a document.
+
+---
+
 Read-only. It fixes nothing: it points, with file and line, and says which skill owns the fix.
 
 ## Checks

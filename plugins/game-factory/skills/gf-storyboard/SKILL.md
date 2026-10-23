@@ -5,6 +5,20 @@ description: "Game storyboard: breaks each script sequence into panels (framing,
 
 # gf-storyboard: storyboard
 
+Breaks every script sequence into panels (framing, action, line, camera, duration, transition) and draws the frames in pixel art with the approved characters and locations. The storyboard becomes the visual bar for production: assets that do not match it get redone. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Storyboarding a chapter before production (W4)
+- Planning the screen flow and the first minute of play
+- Visualizing a scene before it is built
+
+Produces: `docs/06-storyboard/` and `art/storyboard/`.
+
+Works with: gf-narrative, gf-characters, gf-world, gf-cutscenes.
+
+---
+
 > **Detail coherence guardrail:** all content follows the same art standard; no character less detailed than the scenery, and no scenery more detailed than the characters. Detail is volume (light and shadow in masses, continuous outline on actors, desaturated storyboard color), not loose pixels. Character and animal bases are cut out of the storyboard art; the AI only completes directions and animations, anchored on the cutout. Before delivering: a coherence board with the asset at game size over the real scenery, next to the approved reference character and the storyboard cutout. Full rule in `docs/02-art-direction.md` section 0.1.
 
 Inputs: `docs/05-script/chNN.md` (the sequence), sheets and bases in `docs/03-characters/` and `art/characters/*/base/`, sheets and key art in `docs/04-world/`, `docs/02-art-direction.md` (the "storyboard" prompt block). Load `gf-runway`.

@@ -5,6 +5,20 @@ description: "Animated pixel art sprite production with sprite-gen (github.com/a
 
 # gf-sprites: animated characters
 
+Produces animated pixel art sprites. It generates pose strips with sprite-gen and Codex (or extracts cycles from Runway video), cleans them with chroma removal and pixel unfake, rescales them consistently, builds the atlas and delivers it to Godot. It also makes dialogue portraits and effects. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Animating a character, enemy, NPC or boss
+- Redoing a walk, attack or idle cycle
+- Making dialogue portraits or effect sprites
+
+Produces: `art/characters/<chr_id>/runs/` and atlases in `game/assets/sprites/`.
+
+Works with: gf-characters, gf-runway, gf-gameplay.
+
+---
+
 > **Detail coherence guardrail:** all content follows the same art standard; no character less detailed than the scenery, no scenery more detailed than the characters. Detail is volume (light and shadow in masses, continuous outline on actors, desaturated color from the storyboard), not loose pixels. Character and animal bases are cut out of the storyboard art; the AI only completes directions and animations, anchored on the cutout. Before delivering: a coherence board with the asset at game scale over the real scenery, next to the approved main character and the storyboard cutout. Full rule in `docs/02-art-direction.md` section 0.1.
 
 Prerequisites: G3 approved (except the art direction sprite test, marked draft), approved `art/characters/<chr_id>/base/base.png`, states in the character sheet `docs/03-characters/<chr_id>.md`, scale and palette in `docs/02-art-direction.md`. Read `gf-runway`. Variables: `SG=$SPRITE_GEN_ROOT/.venv/bin/sprite-gen`, `PY=$SPRITE_GEN_ROOT/.venv/bin/python`, `PIX=tools/gf/pixelize.py`.
