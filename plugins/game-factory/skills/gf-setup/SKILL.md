@@ -66,10 +66,13 @@ Library: https://github.com/aldegad/sprite-gen (Python CLI + skill). It lives in
 ```bash
 git clone https://github.com/aldegad/sprite-gen tools/sprite-gen
 cd tools/sprite-gen
+git checkout 1dca61df333bc892ca04dd0a248ce9d9512657cd   # the commit the factory was tested with
 /opt/homebrew/bin/python3.12 -m venv .venv   # or another installed Python >= 3.11 (3.12 worked well)
 .venv/bin/pip install -e .
 .venv/bin/sprite-gen --help
 ```
+
+sprite-gen is a third-party project that runs code on your machine and calls Codex with your account. Keep it pinned to a reviewed commit; to upgrade, read the diff since the pinned commit before running `git checkout` on a newer one.
 
 Export in the shell used by the skills: `SPRITE_GEN_ROOT=<root>/tools/sprite-gen` and `SG=$SPRITE_GEN_ROOT/.venv/bin/sprite-gen`.
 

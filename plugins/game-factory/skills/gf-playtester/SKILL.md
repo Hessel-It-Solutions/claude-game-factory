@@ -99,7 +99,8 @@ this method (it is in the prompt template):
   model with high reasoning (a smaller model at medium reasoning played badly and stopped
   early). Demand that the diary is written **during** the play, forbid ending before 15 minutes
   stuck. It needs `-c sandbox_workspace_write.network_access=true` (adb talks to the server
-  on TCP 5037). Run it with `< /dev/null`.
+  on TCP 5037), which opens the network for the whole sandbox: run it from an empty folder that
+  holds only the prompt and the kit, never from the game repo. Run it with `< /dev/null`.
 - If the Codex quota runs out mid-run: build a save at the last checkpoint seen and tell the
   same tester to re-read diary, arsenal and lessons. An API overload error (HTTP 529)
   kills a Claude tester the same way: resume it with SendMessage telling it to re-read

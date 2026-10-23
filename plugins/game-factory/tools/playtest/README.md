@@ -56,7 +56,8 @@ codex exec -s workspace-write \
 # or: codex exec ... "$(cat prompt_filled.md)" < /dev/null
 ```
 
-- `network_access=true` is required: adb talks to its server on TCP 5037.
+- `network_access=true` is required: adb talks to its server on TCP 5037. It opens the network for the whole sandbox, not only adb, so run the tester from an empty folder like the one above, with nothing in it but the prompt and the kit. Never start it from the game repo or from a folder with credentials, `.env` files or SSH keys.
+- `in.sh burst` runs any shell snippet on the device. Use a disposable emulator, not your own phone.
 - `< /dev/null` (or a prompt on stdin): without it `codex exec` waits on stdin forever.
 - Quote heredocs with `<<'EOF'`, otherwise backticks run as commands.
 - The image viewer refuses the screencap PNG; Codex converts it to JPEG itself, which is fine.

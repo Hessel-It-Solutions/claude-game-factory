@@ -11,13 +11,19 @@
 #   GODOT         Godot binary (default: godot)
 #   CODEX_MODEL   Codex model passed with -m (default: Codex's own default)
 #   CODEX_EFFORT  reasoning effort (default: medium)
-#   BOT_CMD       scenario bot command for the validation block, run with the clone's
-#                 copy of the game in /tmp/game_<id>; leave empty to skip the bot step
+#   BOT_CMD       scenario bot command for the validation block, run against the clone's
+#                 scratch copy of the game in .batch/game; leave empty to skip the bot step
 #   BOT_PASS      expected PASS count the bot should print (shown in the brief)
 set -eu
 
 BRIEF=${1:?brief file}
 ID=${2:?batch id}
+
+# These values end up in file paths and in the `sh -c` command line below, so only allow
+# plain names: anything else could run shell code or point outside the clone folder.
+case "$ID" in ''|*[!A-Za-z0-9_-]*) echo "batch id must match [A-Za-z0-9_-]+: $ID" >&2; exit 2 ;; esac
+case "${CODEX_EFFORT:-medium}" in minimal|low|medium|high|xhigh) ;; *) echo "CODEX_EFFORT must be minimal, low, medium, high or xhigh" >&2; exit 2 ;; esac
+case "${CODEX_MODEL:-x}" in *[!A-Za-z0-9._:-]*) echo "CODEX_MODEL must match [A-Za-z0-9._:-]+" >&2; exit 2 ;; esac
 
 SRC=$(cd "$(dirname "$0")/../.." && pwd)
 NAME=$(basename "$SRC")
@@ -63,12 +69,12 @@ strings go in a file of their own (for example $GAME_DIR/i18n/batch_$ID.csv), no
 ## Validation (mandatory, report the numbers)
 - Test suite (GUT) in an rsync copy with its own HOME, so parallel batches do not fight over
   the Godot user dir and the import cache:
-  \`rsync -a --delete --exclude .godot $GAME_DIR/ /tmp/game_$ID/ && HOME=/tmp/h$ID $GODOT --headless --path /tmp/game_$ID --import; HOME=/tmp/h$ID $GODOT --headless --path /tmp/game_$ID -s addons/gut/gut_cmdln.gd -gdir=res://tests -gexit\`
+  \`mkdir -p .batch/home && rsync -a --delete --exclude .godot $GAME_DIR/ .batch/game/ && HOME=\$PWD/.batch/home $GODOT --headless --path .batch/game --import; HOME=\$PWD/.batch/home $GODOT --headless --path .batch/game -s addons/gut/gut_cmdln.gd -gdir=res://tests -gexit\`
   Report the exact total; nothing may fall below the baseline.
 EOT
 if [ -n "$BOT_CMD" ]; then
 cat >> "$FULL" <<EOT
-- Scenario bot, one run: \`HOME=/tmp/hb$ID $BOT_CMD > /tmp/bot$ID.log 2>&1; grep -c '^PASS' /tmp/bot$ID.log\`${BOT_PASS:+ (expected $BOT_PASS)}.
+- Scenario bot, one run: \`mkdir -p .batch/home_bot && HOME=\$PWD/.batch/home_bot $BOT_CMD > .batch/bot.log 2>&1; grep -c '^PASS' .batch/bot.log\`${BOT_PASS:+ (expected $BOT_PASS)}.
   If the bot depended on the old behavior, adjust the bot without hiding a regression. The full multi-seed bot runs happen after the merge.
 EOT
 fi
