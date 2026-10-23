@@ -1,6 +1,6 @@
 ---
 name: gf-levels
-description: Level design and assembly in Godot 4: blockout, TileSet with terrains from the gf-environments tiles, TileMapLayer, parallax, collisions, enemy and item spawns, checkpoints, cutscene and music triggers, difficulty pacing and mechanic onboarding. Use from W6 on for each level in the content plan, or when the user asks to create, adjust or balance a level ("build the level", "fix the collision").
+description: "Level design and assembly in Godot 4: blockout, TileSet with terrains from the gf-environments tiles, TileMapLayer, parallax, collisions, enemy and item spawns, checkpoints, cutscene and music triggers, difficulty pacing and mechanic onboarding. Use from W6 on for each level in the content plan, or when the user asks to create, adjust or balance a level (\"build the level\", \"fix the collision\")."
 ---
 
 # gf-levels: levels

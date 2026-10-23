@@ -1,6 +1,6 @@
 ---
 name: gf-runway
-description: Field manual for the Runway MCP in the game factory, used to generate consistent pixel art (images, pose sheets, animation videos, music, SFX and voice), download the results, keep visual identity through references and log cost. Use whenever any gf-* skill needs to generate or edit art, animation or audio with Runway, or when the user asks to "generate the art", "make the sprite in Runway", "generate the scenery", "make a sound effect".
+description: "Field manual for the Runway MCP in the game factory, used to generate consistent pixel art (images, pose sheets, animation videos, music, SFX and voice), download the results, keep visual identity through references and log cost. Use whenever any gf-* skill needs to generate or edit art, animation or audio with Runway, or when the user asks to \"generate the art\", \"make the sprite in Runway\", \"generate the scenery\", \"make a sound effect\"."
 ---
 
 # gf-runway: generation with Runway

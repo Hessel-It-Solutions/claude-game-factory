@@ -1,6 +1,6 @@
 ---
 name: gf-audio
-description: Game audio with Runway: sound direction (references, instrument palette, theme per character/location, SFX list) in pre-production, and production of looping music, stings, SFX, ambiences and short voices, with normalization and import into Godot. Use in W2 (direction), in production (W5 onward), or when the user asks for music, a sound effect, a soundtrack, a voice or mix adjustments ("make the boss theme", "make a sword sound").
+description: "Game audio with Runway: sound direction (references, instrument palette, theme per character/location, SFX list) in pre-production, and production of looping music, stings, SFX, ambiences and short voices, with normalization and import into Godot. Use in W2 (direction), in production (W5 onward), or when the user asks for music, a sound effect, a soundtrack, a voice or mix adjustments (\"make the boss theme\", \"make a sword sound\")."
 ---
 
 # gf-audio: sound direction and production

@@ -1,6 +1,6 @@
 ---
 name: gf-environments
-description: Pixel art scenery production with Runway: tilesets (with autotile for the Godot TileMap), repeatable parallax layers, props, interactive objects and time-of-day/weather variations, pixelized to the master palette and delivered to Godot. Use from W5 on when a location in the content plan needs tiles, backgrounds or props, or when the user asks to "make the tileset", "make the background", "create the scenery objects", "paint the room".
+description: "Pixel art scenery production with Runway: tilesets (with autotile for the Godot TileMap), repeatable parallax layers, props, interactive objects and time-of-day/weather variations, pixelized to the master palette and delivered to Godot. Use from W5 on when a location in the content plan needs tiles, backgrounds or props, or when the user asks to \"make the tileset\", \"make the background\", \"create the scenery objects\", \"paint the room\"."
 ---
 
 # gf-environments: tiles, parallax and props

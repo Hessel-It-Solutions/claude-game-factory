@@ -1,6 +1,6 @@
 ---
 name: gf-world
-description: Worldbuilding and scenery for the game: world map, a sheet for each location (dramatic function, atmosphere, time of day, weather, palette, parallax layers, tileset, props, hazards) and pixel art key art for each scene made in Runway. Use in W3 of /game-factory (one agent per group of locations), or when the user asks to create or redesign a scene, biome, city or map, "design the world", "make the key art for this location".
+description: "Worldbuilding and scenery for the game: world map, a sheet for each location (dramatic function, atmosphere, time of day, weather, palette, parallax layers, tileset, props, hazards) and pixel art key art for each scene made in Runway. Use in W3 of /game-factory (one agent per group of locations), or when the user asks to create or redesign a scene, biome, city or map, \"design the world\", \"make the key art for this location\"."
 ---
 
 # gf-world: world and scenery

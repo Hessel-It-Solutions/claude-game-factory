@@ -1,0 +1,11 @@
+{
+  "notGrouped": "bottom",
+  "groupings": [
+    { "title": "Producer", "description": "Start here: waves, gates, budget and setup", "skills": ["gf-producer", "gf-setup"] },
+    { "title": "Pre-production", "description": "Concept, GDD, script, world, cast, art direction, storyboard", "skills": ["gf-concept", "gf-game-design", "gf-narrative", "gf-world", "gf-characters", "gf-art-direction", "gf-storyboard"] },
+    { "title": "Art and audio", "description": "Runway, sprite-gen and Codex for pixel art, music and SFX", "skills": ["gf-runway", "gf-sprites", "gf-environments", "gf-ui", "gf-audio"] },
+    { "title": "Godot", "description": "Engine, gameplay, levels, cutscenes, Android and iOS", "skills": ["gf-godot-core", "gf-gameplay", "gf-levels", "gf-cutscenes", "gf-mobile"] },
+    { "title": "Quality", "description": "Tests, bots, blind playtests and design review", "skills": ["gf-autotest", "gf-qa", "gf-playtester", "gf-rpg-review", "gf-continuity"] },
+    { "title": "Release", "skills": ["gf-release"] }
+  ]
+}

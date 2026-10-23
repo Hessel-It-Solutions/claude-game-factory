@@ -1,6 +1,6 @@
 {
   "name": "game-factory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make pixel-art mobile games with Claude Code as the producer, Codex CLI as the engine and Runway for art and audio. Waves, approval gates, 25 specialist skills and the tools that go with them.",
   "author": {
     "name": "Hessel IT Solutions",

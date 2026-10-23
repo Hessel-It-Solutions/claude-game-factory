@@ -1,6 +1,6 @@
 ---
 name: gf-autotest
-description: Automated testing specialist for the Godot 4 game. Turns everything that was implemented into an acceptance-criteria (AC) matrix, links each AC to an automated test (GUT, real scene, scenario bot with invariants, visual capture), runs everything and only delivers with the matrix green. Use after any fix or feature, before installing on a device, when the user asks "did you test it?", reports a bug that slipped through, or says "test everything", "test the ACs", "run the tests", "write a bot for this level".
+description: "Automated testing specialist for the Godot 4 game. Turns everything that was implemented into an acceptance-criteria (AC) matrix, links each AC to an automated test (GUT, real scene, scenario bot with invariants, visual capture), runs everything and only delivers with the matrix green. Use after any fix or feature, before installing on a device, when the user asks \"did you test it?\", reports a bug that slipped through, or says \"test everything\", \"test the ACs\", \"run the tests\", \"write a bot for this level\"."
 ---
 
 # gf-autotest: ACs that are tested, not just "it compiles and passes"

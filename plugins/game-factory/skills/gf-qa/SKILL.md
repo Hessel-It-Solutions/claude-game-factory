@@ -1,6 +1,6 @@
 ---
 name: gf-qa
-description: QA for the Godot 4 mobile game: GUT automated tests, headless smoke tests of every scene, level-run bot, playtest checklist per gate, screenshots in several aspect ratios, asset checks (palette, size, import), regression and a prioritized bug report. Use in W7 and at the end of each chapter, before any production gate, or when the user reports a bug or says "test the game", "run QA", "check the build".
+description: "QA for the Godot 4 mobile game: GUT automated tests, headless smoke tests of every scene, level-run bot, playtest checklist per gate, screenshots in several aspect ratios, asset checks (palette, size, import), regression and a prioritized bug report. Use in W7 and at the end of each chapter, before any production gate, or when the user reports a bug or says \"test the game\", \"run QA\", \"check the build\"."
 ---
 
 # gf-qa: quality

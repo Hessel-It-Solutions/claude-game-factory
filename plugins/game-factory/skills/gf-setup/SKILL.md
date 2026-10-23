@@ -1,6 +1,6 @@
 ---
 name: gf-setup
-description: Prepares and verifies the game factory toolchain (Godot 4 + export templates, Python 3.11+, sprite-gen in a venv, ffmpeg/img2webp, Android SDK/JDK, Xcode, Codex CLI, Runway MCP access) and vendors the factory tools into the game repo (tools/gf, tools/codex, tools/playtest, game/tools). Use in W0 of every new game, when a build or sprite-gen fails because of the environment, or when the user asks to "set up the environment", "install godot", "install sprite-gen", "vendor the factory tools".
+description: "Prepares and verifies the game factory toolchain (Godot 4 + export templates, Python 3.11+, sprite-gen in a venv, ffmpeg/img2webp, Android SDK/JDK, Xcode, Codex CLI, Runway MCP access) and vendors the factory tools into the game repo (tools/gf, tools/codex, tools/playtest, game/tools). Use in W0 of every new game, when a build or sprite-gen fails because of the environment, or when the user asks to \"set up the environment\", \"install godot\", \"install sprite-gen\", \"vendor the factory tools\"."
 ---
 
 # gf-setup: toolchain
@@ -36,6 +36,13 @@ tools/gf/        CLI, run with tools/gf/gf.sh
 tools/codex/     batch launcher for Codex jobs
 tools/godot/     GDScript tools (bot template, capture, collision dump), copied to game/tools/
 tools/playtest/  blind playtest kit
+```
+
+If that directory does not exist, the skills were installed on their own (for example with `npx skills add`), without the rest of the plugin. Fetch the tools and templates from the repository instead (add `--branch <tag>` to pin a release you have reviewed):
+
+```bash
+git clone --depth 1 https://github.com/Hessel-It-Solutions/claude-game-factory /tmp/game-factory
+PLUGIN_TOOLS=/tmp/game-factory/plugins/game-factory/tools
 ```
 
 Copy them into the game repo (replace `PLUGIN_TOOLS` with the resolved path):

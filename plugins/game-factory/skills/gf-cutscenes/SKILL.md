@@ -1,6 +1,6 @@
 ---
 name: gf-cutscenes
-description: Implementation of cutscenes and dialogue in Godot 4 in the classic 2D RPG style, with no video: animated character portrait with a text box at the bottom, cutscenes with the game's own sprites on the scenery driven by AnimationPlayer (camera, tweens, effects), static full-screen illustrations at climaxes, subtitles, skip, and wiring to level triggers. Use from W6 on, or when the user asks to build a scene, adjust in-game dialogue or create the opening/ending ("make the cutscene", "wire the dialogue").
+description: "Implementation of cutscenes and dialogue in Godot 4 in the classic 2D RPG style, with no video: animated character portrait with a text box at the bottom, cutscenes with the game's own sprites on the scenery driven by AnimationPlayer (camera, tweens, effects), static full-screen illustrations at climaxes, subtitles, skip, and wiring to level triggers. Use from W6 on, or when the user asks to build a scene, adjust in-game dialogue or create the opening/ending (\"make the cutscene\", \"wire the dialogue\")."
 ---
 
 # gf-cutscenes: scenes and dialogue

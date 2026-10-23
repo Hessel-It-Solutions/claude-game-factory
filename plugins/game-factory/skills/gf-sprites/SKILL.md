@@ -1,6 +1,6 @@
 ---
 name: gf-sprites
-description: Animated pixel art sprite production with sprite-gen (github.com/aldegad/sprite-gen) + Codex + Runway. Generates pose strips through the sprite-gen codex provider (ChatGPT subscription) and locomotion videos in Runway from the character's identity base, extracts with chroma and pixel unfake, assembles the atlas, curates, exports Aseprite JSON and delivers into the Godot project. Also makes dialogue portraits and effects. Use from W5 on for characters, enemies, NPCs, bosses and effects, or when the user asks to "animate the character", "make the sprite", "make the attack sprite", "redo the walk".
+description: "Animated pixel art sprite production with sprite-gen (github.com/aldegad/sprite-gen) + Codex + Runway. Generates pose strips through the sprite-gen codex provider (ChatGPT subscription) and locomotion videos in Runway from the character's identity base, extracts with chroma and pixel unfake, assembles the atlas, curates, exports Aseprite JSON and delivers into the Godot project. Also makes dialogue portraits and effects. Use from W5 on for characters, enemies, NPCs, bosses and effects, or when the user asks to \"animate the character\", \"make the sprite\", \"make the attack sprite\", \"redo the walk\"."
 ---
 
 # gf-sprites: animated characters

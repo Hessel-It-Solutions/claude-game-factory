@@ -1,6 +1,6 @@
 ---
 name: gf-characters
-description: Character creation for the game: character sheet (bible) with personality, arc, silhouette, palette and lists of animations and expressions; concept art, turnaround and the pixel art identity base image made in Runway, which becomes the anchor of all sprites. Use in W3 of /game-factory (one agent per group of characters), or when the user asks to create, redesign or detail a character, enemy, boss or NPC, "design the hero", "make the character sheet".
+description: "Character creation for the game: character sheet (bible) with personality, arc, silhouette, palette and lists of animations and expressions; concept art, turnaround and the pixel art identity base image made in Runway, which becomes the anchor of all sprites. Use in W3 of /game-factory (one agent per group of characters), or when the user asks to create, redesign or detail a character, enemy, boss or NPC, \"design the hero\", \"make the character sheet\"."
 ---
 
 # gf-characters: cast

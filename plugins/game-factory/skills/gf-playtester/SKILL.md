@@ -1,6 +1,6 @@
 ---
 name: gf-playtester
-description: Blind playtester for the game. Plays the build on the Android emulator like an ordinary player who has never seen the game: only looks at the screen (screenshots) and touches it, without reading code, docs, script, handoff or memory, and without knowing where anything is. Notes every moment of doubt, where it got lost, what it misread and how long it was stuck, and delivers a diary with prioritized friction points. Use when the user asks to "run a blind playtest", "test it like a player", "game tester", "play it knowing nothing", "would a normal user understand this?", or before a chapter gate, after gf-autotest.
+description: "Blind playtester for the game. Plays the build on the Android emulator like an ordinary player who has never seen the game: only looks at the screen (screenshots) and touches it, without reading code, docs, script, handoff or memory, and without knowing where anything is. Notes every moment of doubt, where it got lost, what it misread and how long it was stuck, and delivers a diary with prioritized friction points. Use when the user asks to \"run a blind playtest\", \"test it like a player\", \"game tester\", \"play it knowing nothing\", \"would a normal user understand this?\", or before a chapter gate, after gf-autotest."
 ---
 
 # gf-playtester: the player who knows nothing

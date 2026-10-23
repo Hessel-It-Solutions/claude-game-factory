@@ -1,6 +1,6 @@
 ---
 name: gf-godot-core
-description: Architecture and technical base of the Godot 4 pixel art mobile game project: scaffold, pixel-perfect settings, folder structure, autoloads (Events, Game, Save, Audio, Scenes, Settings), Aseprite JSON to SpriteFrames importer, state machine, abstract touch input, save system, GDScript code patterns and GUT tests. Use in W5 of /game-factory, and whenever something requires changing project.godot, autoloads, addons or contracts between systems ("set up the Godot project", "add an autoload").
+description: "Architecture and technical base of the Godot 4 pixel art mobile game project: scaffold, pixel-perfect settings, folder structure, autoloads (Events, Game, Save, Audio, Scenes, Settings), Aseprite JSON to SpriteFrames importer, state machine, abstract touch input, save system, GDScript code patterns and GUT tests. Use in W5 of /game-factory, and whenever something requires changing project.godot, autoloads, addons or contracts between systems (\"set up the Godot project\", \"add an autoload\")."
 ---
 
 # gf-godot-core: technical base
