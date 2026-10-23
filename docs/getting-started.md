@@ -39,6 +39,16 @@ To hack on the plugin itself, clone this repo and add it as a local marketplace 
 /plugin marketplace add /path/to/claude-game-factory
 ```
 
+### Without Claude Code
+
+The skills also work in other agents that support the Agent Skills format. Install them from [skills.sh](https://skills.sh/Hessel-It-Solutions/claude-game-factory):
+
+```sh
+npx skills add Hessel-It-Solutions/claude-game-factory
+```
+
+Use `-a <agent>` to pick the agent and `-s <skill>` to install only some skills. You get the skills without the plugin extras: there is no `/game-factory` command (ask in plain words, "start a new game called my_game with the game factory"), and `gf-setup` clones this repository to get the tools and templates. Subagents, parallel waves and the Runway MCP depend on what your agent supports.
+
 ## 3. Connect Runway (optional but recommended)
 
 Connect Runway as an MCP server, either through the claude.ai connectors (it then shows up in Claude Code as `mcp__claude_ai_Runaway__*` tools, the connector name is spelled that way) or through your own MCP config. Ask Claude "what is my Runway balance?" to confirm it works. The producer checks the balance before and after every wave.

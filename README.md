@@ -22,18 +22,12 @@ More screenshots, animations, the blind playtest flipbook, music and sound effec
 
 ## Quick start
 
+### Claude Code (recommended: full plugin)
+
 ```text
 /plugin marketplace add Hessel-It-Solutions/claude-game-factory
 /plugin install game-factory@hessel
 ```
-
-Using another agent (Cursor, Codex, Gemini, OpenCode and others)? The skills are also on [skills.sh](https://skills.sh/Hessel-It-Solutions/claude-game-factory):
-
-```sh
-npx skills add Hessel-It-Solutions/claude-game-factory
-```
-
-That installs the 25 skills only. The `gf-setup` skill fetches the tools and templates from this repository, and instead of the `/game-factory` command you ask in plain words ("start a new game called my_game with the game factory"). Claude Code users get the full experience from the plugin.
 
 Then, in an empty folder:
 
@@ -46,6 +40,16 @@ The producer sets up the toolchain (W0), interviews you about the game (W1), and
 ```text
 /game-factory:game-factory next
 ```
+
+### Other agents (Cursor, Codex, Gemini, OpenCode and others)
+
+The skills are also listed on [skills.sh](https://skills.sh/Hessel-It-Solutions/claude-game-factory):
+
+```sh
+npx skills add Hessel-It-Solutions/claude-game-factory
+```
+
+This installs the 25 skills without the producer command. Ask in plain words instead, for example "start a new game called my_game with the game factory", then "plan the next wave". The `gf-setup` skill downloads the tools and templates from this repository during W0.
 
 The full walkthrough, with requirements and every command, is in [docs/getting-started.md](docs/getting-started.md).
 
