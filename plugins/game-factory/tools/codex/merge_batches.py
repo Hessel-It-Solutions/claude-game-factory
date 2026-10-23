@@ -10,7 +10,10 @@ three-way merge with `git merge-file` into the main tree:
   - conflicts: the file is written with conflict markers and listed at the end
 
 Without --apply it only prints what would happen (dry run). Nothing is deleted: a file
-removed in a clone is reported, not removed. Skips .git, .godot and .captures.
+removed in a clone is reported, not removed. Skips .git, .godot, .captures and .batch.
+Symbolic links are never followed or copied: a clone is written by an agent, and a link
+to a file outside the project (an SSH key, a token) would otherwise be copied into main as
+a regular file and could end up committed. Links are listed for manual review.
 Baseline = a pristine clone or checkout taken when the batches were launched.
 The dry run cannot predict conflicts between clones (each merge changes main), so review the
 diff after --apply on a committed main tree.
@@ -25,13 +28,30 @@ import sys
 import tempfile
 from pathlib import Path
 
-SKIP = {".git", ".godot", ".captures", "__pycache__", ".DS_Store"}
+SKIP = {".git", ".godot", ".captures", ".batch", "__pycache__", ".DS_Store"}
 
 
-def walk(root: Path):
+def has_link(root: Path, rel: Path) -> bool:
+    """True when the path or any parent directory inside root is a symbolic link."""
+    current = root
+    for part in rel.parts:
+        current = current / part
+        if current.is_symlink():
+            return True
+    return False
+
+
+def walk(root: Path, links: list | None = None):
     for path in root.rglob("*"):
-        if path.is_file() and not (set(path.relative_to(root).parts) & SKIP):
-            yield path.relative_to(root)
+        rel = path.relative_to(root)
+        if set(rel.parts) & SKIP:
+            continue
+        if path.is_symlink():
+            if links is not None:
+                links.append((root.name, rel))
+            continue
+        if path.is_file():
+            yield rel
 
 
 def same(a: Path, b: Path) -> bool:
@@ -46,10 +66,13 @@ def main() -> int:
     ap.add_argument("clones", nargs="+", type=Path)
     args = ap.parse_args()
 
-    conflicts, merged, copied, removed = [], [], [], []
+    conflicts, merged, copied, removed, links = [], [], [], [], []
     for clone in args.clones:
-        for rel in sorted(walk(clone)):
+        for rel in sorted(walk(clone, links)):
             c, b, m = clone / rel, args.base / rel, args.main / rel
+            if has_link(args.main, rel) or has_link(args.base, rel):
+                links.append((clone.name, rel))  # never write through a link in main
+                continue
             if same(c, b):
                 continue  # the clone did not change this file
             if not m.exists() and not b.exists():
@@ -89,11 +112,13 @@ def main() -> int:
 
     verb = "" if args.apply else "would be "
     print(f"{len(copied)} file(s) {verb}taken as is, {len(merged)} {verb}three-way merged, "
-          f"{len(conflicts)} conflict(s), {len(removed)} deleted in a clone (not removed)")
-    for label, items in (("taken", copied), ("merged", merged), ("CONFLICT", conflicts), ("deleted in clone", removed)):
+          f"{len(conflicts)} conflict(s), {len(removed)} deleted in a clone (not removed), "
+          f"{len(links)} symbolic link(s) skipped")
+    for label, items in (("taken", copied), ("merged", merged), ("CONFLICT", conflicts),
+                         ("deleted in clone", removed), ("SYMLINK skipped, review by hand", links)):
         for name, rel in items:
             print(f"{label}: {name}: {rel}")
-    return 1 if conflicts else 0
+    return 1 if conflicts or links else 0
 
 
 if __name__ == "__main__":

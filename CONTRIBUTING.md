@@ -40,6 +40,10 @@ After editing, reinstall or run `/plugin` to refresh, and try the affected skill
 - For skill changes, describe how you tested it (which wave, which game, what came out).
 - Bump the version in `plugins/game-factory/.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` when the change affects users.
 
+## Security
+
+Report vulnerabilities privately, as described in [SECURITY.md](SECURITY.md). That file also lists what the tools run on your machine.
+
 ## Code of conduct
 
 By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
