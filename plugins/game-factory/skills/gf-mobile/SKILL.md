@@ -5,6 +5,20 @@ description: "Mobile platform for the Godot 4 game: Android export presets (debu
 
 # gf-mobile: build, performance and technical store side
 
+Gets the game onto phones: Android export presets (debug APK, release AAB) and iOS, signing, adaptive icons and splash, permissions, on-device performance (fps, memory, size, battery), pause and resume, and ads or in-app purchases when the concept calls for them. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Building and installing an APK for testing
+- The game is slow or broken on a phone but fine on desktop
+- Preparing store builds, signing or monetization
+
+Produces: `game/export_presets.cfg`, `game/scripts/platform/`, `builds/`.
+
+Works with: gf-setup, gf-qa, gf-release.
+
+---
+
 Owner of `game/export_presets.cfg`, `game/scripts/platform/`, `builds/`. Toolchain from gf-setup.
 
 ## Android export

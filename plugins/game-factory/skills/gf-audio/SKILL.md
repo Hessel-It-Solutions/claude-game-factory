@@ -5,6 +5,20 @@ description: "Game audio with Runway: sound direction (references, instrument pa
 
 # gf-audio: sound direction and production
 
+Handles sound from direction to delivery. In pre-production it defines references, instrument palette, themes and the SFX list. In production it generates looping music, stingers, sound effects, ambiences and short voices with Runway, normalizes them and imports them into Godot. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Writing the audio direction
+- Making music, a sound effect, ambience or a voice line
+- Adjusting the mix or fixing loops
+
+Produces: `docs/07-audio-direction.md`, `audio/`, `game/assets/audio/`.
+
+Works with: gf-runway, gf-godot-core.
+
+---
+
 Runway tools: `generate_music` (`lyria-3-clip` loops and stings, `lyria-3-pro` full track), `generate_sound_effect` (up to 30 s, `loop: true` for ambience), `generate_speech` (voice). Read `gf-runway` for logging and cost.
 
 ## W2: direction (`docs/07-audio-direction.md`)

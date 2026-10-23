@@ -5,6 +5,21 @@ description: "Producer of the pixel art mobile game factory. Owns the shared con
 
 # gf-producer: factory contracts
 
+Runs the game factory like a small studio. It owns the shared rules every other skill follows: the folder layout, the wave map, the approval gates G0 to G6, who writes which file, the asset registry and the Runway budget. It also decides who does each job: Claude plans and reviews, Codex writes code and sprites, Runway makes art and audio. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Starting a new game or checking its status
+- Planning, dispatching or closing a wave of work
+- Asking for approval at a gate before production starts
+- Estimating credits and tokens before spending them
+
+Produces: `production/STATE.md`, `DECISIONS.md`, `BUDGET.md`, wave plans and reports.
+
+Works with: every gf-* skill; start with gf-setup.
+
+---
+
 Every `gf-*` skill obeys this file. If a skill contradicts the producer, the producer wins.
 
 ## Principle

@@ -5,6 +5,20 @@ description: "Pixel art UI and HUD for mobile: UI kit (buttons, 9-slice panels, 
 
 # gf-ui: interface
 
+Builds the pixel art interface for phones: UI kit (buttons, 9-slice panels, bars, icons), fonts, HUD, on-screen touch controls, dialogue box with portrait, menus and flow screens, the Godot Theme, safe areas and accessibility. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Making the HUD, menus, pause or game over screens
+- Adding touch controls or a dialogue box
+- Fixing layout on a phone or a notch
+
+Produces: `art/ui/`, `game/assets/ui/`, `game/scenes/ui/`, the Theme.
+
+Works with: gf-art-direction, gf-godot-core, gf-mobile.
+
+---
+
 Inputs: GDD sections 2 (controls) and 9 (screens), screen flow board in `docs/06-storyboard/`, `docs/02-art-direction.md` (UI prompt block). Read `gf-runway`.
 
 ## UI kit (art)

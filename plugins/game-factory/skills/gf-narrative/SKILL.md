@@ -5,6 +5,20 @@ description: "Game narrative and script: premise, lore, act and chapter structur
 
 # gf-narrative: structure and script
 
+Writes the story side of the game: premise, lore, act and chapter structure, cast arcs, and the full scene script with dialogue. It also exports the dialogue to data files that the game loads. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Structuring the story into acts and chapters
+- Writing or revising a scene, dialogue or lore
+- Preparing source text for cutscenes
+
+Produces: `docs/05-script/` and `game/data/dialogue/`.
+
+Works with: gf-characters, gf-storyboard, gf-cutscenes.
+
+---
+
 Inputs: `docs/00-concept.md`; in W3 also `docs/03-characters/` and `docs/04-world/` in progress. Outputs in `docs/05-script/`.
 
 ## W2: structure (`outline.md`)

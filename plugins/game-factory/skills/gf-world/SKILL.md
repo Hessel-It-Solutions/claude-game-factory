@@ -5,6 +5,20 @@ description: "Worldbuilding and scenery for the game: world map, a sheet for eac
 
 # gf-world: world and scenery
 
+Designs the world and its places: the world map, a sheet for each location (dramatic function, mood, time of day, weather, palette, parallax layers, tiles, props, hazards) and pixel art key art for each one. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Designing the world map and locations
+- Creating or redesigning a scene, biome or town
+- Producing key art that later guides tiles and painted rooms
+
+Produces: `docs/04-world/` and `art/environments/<loc_id>/keyart/`.
+
+Works with: gf-art-direction, gf-environments, gf-levels.
+
+---
+
 > **Detail coherence guardrail:** all content follows the same art standard; no character less detailed than the scenery, and no scenery more detailed than the characters. Detail is volume (light and shadow in masses, continuous outline on actors, desaturated storyboard color), not loose pixels. Character and animal bases are cut out of the storyboard art; the AI only completes directions and animations, anchored on the cutout. Before delivering: a coherence board with the asset at game size over the real scenery, next to the approved reference character and the storyboard cutout. Full rule in `docs/02-art-direction.md` section 0.1.
 
 Inputs: `docs/05-script/outline.md` (locations), `docs/01-gdd.md` (mechanics the terrain must support), `docs/02-art-direction.md`. Load `gf-runway` before generating.

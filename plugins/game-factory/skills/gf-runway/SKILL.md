@@ -5,6 +5,20 @@ description: "Field manual for the Runway MCP in the game factory, used to gener
 
 # gf-runway: generation with Runway
 
+The field manual for generating art and audio with the Runway MCP. It covers which model to use for each asset, how to keep a character's identity with reference images, how to download and post-process results to the palette, and how to log every generation and its cost. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Any skill needs to generate or edit an image, video, music, SFX or voice
+- Choosing a Runway model for an asset
+- Recording prompts, task ids and credits
+
+Produces: downloaded assets plus `art/_prompts/<asset_id>.md` and registry rows.
+
+Works with: gf-art-direction, gf-characters, gf-environments, gf-audio, gf-sprites.
+
+---
+
 Runway generates concept art, identity bases, scenery, static illustrations and audio. Runway video is only an internal tool for extracting locomotion cycles for sprites; the game has no video (a cutscene is a portrait plus a text box). Sprite pose strips come from Codex through sprite-gen (see gf-sprites); Runway only generates strips as a fallback. Scripts and sprite-gen turn everything into real pixel art. AI images "in pixel art" never come out with a clean grid, so **every asset that goes into the game gets post-processing** (sprite-gen `extract` with `pixel_unfake`, or `scripts/pixelize.py`).
 
 Reply to the user in the user's language. The Runway MCP tools are used by their short names below (`whoami`, `generate_image`...). When Runway is connected through claude.ai they are exposed as `mcp__claude_ai_Runaway__whoami`, `mcp__claude_ai_Runaway__generate_image`, and so on.

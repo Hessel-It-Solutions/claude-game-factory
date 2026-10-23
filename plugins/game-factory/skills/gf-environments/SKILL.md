@@ -5,6 +5,20 @@ description: "Pixel art scenery production with Runway: tilesets (with autotile 
 
 # gf-environments: tiles, parallax and props
 
+Makes the scenery assets: tilesets with autotile for the Godot TileMap, looping parallax layers, props, interactive objects and time of day or weather variants, all locked to the master palette. Important rooms can be painted as one piece over the real level blockout. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- A location needs tiles, backgrounds or props
+- Painting a key room over a blockout
+- Making night, rain or sunset variants
+
+Produces: `art/environments/<loc_id>/` and `game/assets/environments/`.
+
+Works with: gf-world, gf-levels, gf-runway.
+
+---
+
 > **Detail coherence guardrail:** all content follows the same art standard; no character less detailed than the scenery, no scenery more detailed than the characters. Detail is volume (light and shadow in masses, continuous outline on actors, desaturated color from the storyboard), not loose pixels. Character and animal bases are cut out of the storyboard art; the AI only completes directions and animations, anchored on the cutout. Before delivering: a coherence board with the asset at game scale over the real scenery, next to the approved main character and the storyboard cutout. Full rule in `docs/02-art-direction.md` section 0.1.
 
 Inputs: `docs/04-world/<loc_id>.md` (tile list, layers, props), key art in `art/environments/<loc_id>/keyart/`, `docs/02-art-direction.md`. Read `gf-runway`. `SG=$SPRITE_GEN_ROOT/.venv/bin/sprite-gen`, `PY=$SPRITE_GEN_ROOT/.venv/bin/python`, `PIX=tools/gf/pixelize.py`.

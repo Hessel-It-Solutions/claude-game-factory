@@ -5,6 +5,20 @@ description: "Mobile game design: the GDD (docs/01-gdd.md) with mechanics, syste
 
 # gf-game-design: GDD and content plan
 
+Writes the game design document and the content plan. The GDD covers mechanics, systems, touch controls, progression, economy, enemies and the first balance numbers. The content plan lists, per chapter, every level and every asset that has to be made. Part of the [game factory](https://github.com/Hessel-It-Solutions/claude-game-factory), a set of skills that make pixel-art mobile games with Godot 4.
+
+## When to use
+
+- Writing GDD v1 after the concept is approved
+- Creating, changing or balancing a mechanic
+- Planning which levels and assets each chapter needs
+
+Produces: `docs/01-gdd.md`, `docs/08-content-plan.md`.
+
+Works with: gf-concept, gf-narrative, gf-gameplay, gf-levels.
+
+---
+
 Input: approved `docs/00-concept.md` (G1). Outputs: `docs/01-gdd.md` (W2) and `docs/08-content-plan.md` (W3).
 
 ## GDD v1 (W2)
